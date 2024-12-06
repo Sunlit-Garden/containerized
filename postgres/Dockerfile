@@ -1,7 +1,7 @@
 FROM postgres:17.2-alpine3.20
 
 LABEL org.opencontainers.image.source="https://github.com/anesthetised/containerized"
-LABEL org.opencontainers.image.licenses="MIT"
+LABEL org.opencontainers.image.licenses="PostgreSQL"
 LABEL org.opencontainers.image.version=17.2
 LABEL org.opencontainers.image.description="Using multiple databases with the official PostgreSQL Docker image"
 
