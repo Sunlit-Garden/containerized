@@ -1,6 +1,12 @@
-FROM golang:1.23.0-alpine3.20
+FROM golang:1.23.4-alpine3.20
+
+ARG VERSION=v0.0.0-20241205190148-2cbe98924282
+
 LABEL org.opencontainers.image.source="https://github.com/anesthetised/containerized"
+LABEL org.opencontainers.image.version=${VERSION}
+
 ENV GOPROXY=https://proxy.golang.org
-RUN go install golang.org/x/pkgsite/cmd/pkgsite@v0.0.0-20240824135812-676c19eae995
+RUN go install golang.org/x/pkgsite/cmd/pkgsite@${VERSION}
+
 EXPOSE 8080
 ENTRYPOINT ["pkgsite", "-proxy", "-http", ":8080"]
