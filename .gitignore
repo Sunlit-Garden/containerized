@@ -1,6 +1,5 @@
 .idea/
-
 bitcoin/
 btcd/
-
 amneziawg-go/
+nats-dashboard/
