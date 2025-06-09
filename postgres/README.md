@@ -7,7 +7,7 @@ Usage:
 ```yaml
 services:
   db:
-    image: ghcr.io/anesthetised/containerized/postgres:17.4-alpine3.21
+    image: ghcr.io/anesthetised/containerized/postgres:17.5-alpine3.22
     restart: unless-stopped
     user: postgres
     environment:

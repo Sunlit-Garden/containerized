@@ -1,4 +1,4 @@
-FROM postgres:17.5-alpine3.21
+FROM postgres:17.5-alpine3.22
 
 LABEL org.opencontainers.image.source="https://github.com/anesthetised/containerized"
 LABEL org.opencontainers.image.licenses="PostgreSQL"
