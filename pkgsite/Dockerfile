@@ -1,6 +1,6 @@
 FROM golang:1.24.4-alpine3.22
 
-ARG VERSION=v0.0.0-20250608123103-82c52f1754cd
+ARG VERSION=v0.0.0-20250624191723-ae590d8f0828
 
 LABEL org.opencontainers.image.source="https://github.com/anesthetised/containerized"
 LABEL org.opencontainers.image.version=${VERSION}
